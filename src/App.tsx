@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './scss/app.scss'
 import FirstPage from './components/FirstPage/FirstPage';
 
@@ -8,6 +8,12 @@ const { Header, Footer, Content } = Layout;
 const App: React.FC = () => {
   const [isVisited, setIsVisited] = useState(false)
 
+  useEffect( () => {
+    if (localStorage.getItem('isVisited')) {
+      setIsVisited(true)
+    }
+  }, [])
+
   if (!isVisited) return <FirstPage setIsVisited={setIsVisited} />
 
   return (
@@ -15,7 +21,7 @@ const App: React.FC = () => {
       <Layout>
         <Header className={'header'}>Header</Header>
         <Content className={'main'}>Content</Content>
-        <Footer className={'footer'}>Footer</Footer>
+        <Footer className={'footer'}>Aleksandr Glebik 2023</Footer>
       </Layout>
     </Space>
   )
