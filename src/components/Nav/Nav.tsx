@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom';
 const Nav: React.FC = () => {
   return (
     <Breadcrumb
-    items={[
-      {
-        title: <Link to="/">Посты</Link>,
-      },
-      {
-        title: <Link to="/create">Создать</Link>,
-      },
-      {
-        title: <Link to="/favorite">Избранное</Link>,
-      }
+      items={[
+        {
+          title: <Link to="/">Посты</Link>,
+        },
+        {
+          title: <Link to="/create">Создать</Link>,
+        },
+        {
+          title: <Link to="/favorite">Избранное</Link>,
+        }
     ]}
   />
   )
