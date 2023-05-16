@@ -5,11 +5,19 @@ import { Typography, Button, Form, Input, Select } from 'antd'
 
 const { Title } = Typography
 const { TextArea } = Input;
+export interface ObjFormType {
+  name: string
+  select: string
+  text: string
+  date?: string
+}
 
 const CreatePosts: React.FC = () => {
   const [form] = Form.useForm()
 
-  const onFinish = (values: string) => {
+  const onFinish = (values: ObjFormType) => {
+    const date = new Date().toLocaleDateString()
+    values.date = date
     console.log('Success:', values)
     form.resetFields()
   };
