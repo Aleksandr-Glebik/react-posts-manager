@@ -8,6 +8,12 @@
         },
         {
             "name": "New post 2",
+            "select": "note",
+            "text": "Very important text 2 aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "date": "16.05.2023"
+        },
+        {
+            "name": "New post 3",
             "select": "news",
             "text": "Very important text 2",
             "date": "16.05.2023"
