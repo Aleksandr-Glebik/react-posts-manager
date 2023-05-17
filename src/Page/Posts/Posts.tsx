@@ -1,9 +1,21 @@
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-const Posts = () => {
+import { fetchPosts, fetchPostsType } from '../../services/fetchPosts'
+
+const Posts: React.FC = () => {
+  const [posts, setPosts] = useState<fetchPostsType | string | []>([])
+
+  useEffect( () => {
+    fetchPosts()
+     .then(data => setPosts(data))
+  }, [])
+
+
   return (
-    <div>Posts</div>
+    <div>
+      {JSON.stringify(posts, null, 4)}
+    </div>
   )
 }
 

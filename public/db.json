@@ -1,0 +1,16 @@
+{
+    "posts": [
+        {
+            "name": "New post",
+            "select": "news",
+            "text": "Very important text",
+            "date": "17.05.2023"
+        },
+        {
+            "name": "New post 2",
+            "select": "news",
+            "text": "Very important text 2",
+            "date": "16.05.2023"
+        }
+    ]
+}
