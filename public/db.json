@@ -1,22 +1,32 @@
 {
-    "posts": [
-        {
-            "name": "New post",
-            "select": "news",
-            "text": "Very important text",
-            "date": "17.05.2023"
-        },
-        {
-            "name": "New post 2",
-            "select": "note",
-            "text": "Very important text 2 aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-            "date": "16.05.2023"
-        },
-        {
-            "name": "New post 3",
-            "select": "news",
-            "text": "Very important text 2",
-            "date": "16.05.2023"
-        }
-    ]
+  "posts": [
+    {
+      "id": "1",
+      "name": "New post",
+      "select": "news",
+      "text": "Very important text",
+      "date": "17.05.2023"
+    },
+    {
+      "id": "2",
+      "name": "New post 2",
+      "select": "note",
+      "text": "Very important text 2 aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "date": "16.05.2023"
+    },
+    {
+      "id": "3",
+      "name": "New post 3",
+      "select": "news",
+      "text": "Very important text 3",
+      "date": "17.05.2023"
+    },
+    {
+      "name": "Sasha Glebik ",
+      "text": "2222222",
+      "select": "news",
+      "date": "18.05.2023",
+      "id": "4I29kte"
+    }
+  ]
 }

@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from './CreatePost.module.scss'
+import { fetchPosts } from '../../services/fetchPosts'
 
 import { Typography, Button, Form, Input, Select } from 'antd'
+import { setPosts } from '../../services/setPosts'
 
 const { Title } = Typography
 const { TextArea } = Input;
 export interface ObjFormType {
+  id: number | undefined
   name: string
   select: string
   text: string
@@ -18,7 +21,14 @@ const CreatePosts: React.FC = () => {
   const onFinish = (values: ObjFormType) => {
     const date = new Date().toLocaleDateString()
     values.date = date
+    const newId = fetchPosts().then(data => {
+      if (Array.isArray(data)) {
+        return data.length + 1
+      }
+    })
+    values.id = +newId
     console.log('Success:', values)
+    setPosts(values)
     form.resetFields()
   };
 
