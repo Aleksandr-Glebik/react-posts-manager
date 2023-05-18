@@ -9,11 +9,13 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import NotFoundBlock from './components/NotFound/NotFoundBlock';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <NotFoundBlock />,
     children: [
       {
         path: '/',
