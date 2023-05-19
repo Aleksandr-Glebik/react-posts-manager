@@ -7,12 +7,12 @@ import clsx from 'clsx'
 import { Card, Space } from 'antd';
 import { ObjFormType } from '../../Page/CreatePost/CreatePost';
 
-const PostCard: React.FC<ObjFormType> = ( { name, text, select, date } ) => {
+const PostCard: React.FC<ObjFormType> = ( { name, text, select, date, favorite } ) => {
   return (
     <Space direction="vertical" size={16}>
         <Card
           title={name}
-          className={styles.title}
+          className={clsx(styles.title, favorite === 'true' ? styles.favorite : '')}
         >
             <div className={styles.container}>
                 <p className={styles.text}>

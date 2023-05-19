@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './CreatePost.module.scss'
 import { fetchPosts } from '../../services/fetchPosts'
 
-import { Typography, Button, Form, Input, Select } from 'antd'
+import { Typography, Button, Form, Input, Select, Checkbox } from 'antd'
 import { setPosts } from '../../services/setPosts'
 
 const { Title } = Typography
@@ -13,6 +13,7 @@ export interface ObjFormType {
   select: string
   text: string
   date?: string
+  favorite: string
 }
 
 const CreatePosts: React.FC = () => {
@@ -63,6 +64,7 @@ const CreatePosts: React.FC = () => {
          }}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
+        initialValues={{ favorite: false }}
       >
       <Form.Item
         label="Название"
@@ -87,6 +89,9 @@ const CreatePosts: React.FC = () => {
           <Select.Option value="news">Новость</Select.Option>
           <Select.Option value="note">Заметка</Select.Option>
         </Select>
+      </Form.Item>
+      <Form.Item name="favorite" valuePropName="checked" wrapperCol={{ offset: 8, span: 16 }}>
+        <Checkbox>Add to favorite</Checkbox>
       </Form.Item>
       <Form.Item {...tailLayout}>
         <Button

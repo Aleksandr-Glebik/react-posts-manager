@@ -5,63 +5,24 @@
       "name": "New post",
       "select": "news",
       "text": "Very important text",
-      "date": "17.05.2023"
+      "date": "17.05.2023",
+      "favorite": "true"
     },
     {
       "id": "2",
       "name": "New post 2",
       "select": "note",
       "text": "Very important text 2 aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "date": "16.05.2023"
+      "date": "16.05.2023",
+      "favorite": "true"
     },
     {
       "id": "3",
       "name": "New post 3",
       "select": "news",
       "text": "Very important text 3",
-      "date": "17.05.2023"
-    },
-    {
-      "name": "Sasha Glebik ",
-      "text": "2222222",
-      "select": "news",
-      "date": "18.05.2023",
-      "id": "4I29kte"
-    },
-    {
-      "name": "Sasha Glebik ",
-      "text": "aaaaaaaaaaa",
-      "select": "news",
-      "date": "18.05.2023",
-      "id": "VFG5lSv"
-    },
-    {
-      "name": "Sasha Glebik ",
-      "text": "The best programmer",
-      "select": "note",
-      "date": "18.05.2023",
-      "id": "nfKexdJ"
-    },
-    {
-      "name": "aaaaaaa",
-      "text": "aaaaaaaaaaaaa",
-      "select": "news",
-      "date": "18.05.2023",
-      "id": "KyMltLK"
-    },
-    {
-      "name": "Sasha Glebik ",
-      "text": "11111111",
-      "select": "news",
-      "date": "18.05.2023",
-      "id": "C2knykI"
-    },
-    {
-      "name": "Sasha Glebik ",
-      "text": "aaaaaaaaaaaaaa",
-      "select": "news",
-      "date": "18.05.2023",
-      "id": "00Gi3hs"
+      "date": "17.05.2023",
+      "favorite": "false"
     }
-  ]
+    ]
 }
